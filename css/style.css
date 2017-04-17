@@ -1,0 +1,72 @@
+.thumbnail {
+	width: 100px;
+	height: 100px;
+}
+
+
+.image {
+	width: 200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+table {
+	border-collapse: collapse;
+	width: 70%;
+	margin-left: 15%;
+}
+
+td {
+	width:33%;
+	padding: 5px;
+	text-align: left;
+}
+
+td img{
+	opacity:0.7;
+}
+
+th {
+	background-color: #C4ACE8;
+	color: white;
+}
+
+td:hover {
+	background-color:darkgrey;
+	color: crimson
+}
+
+td:hover img{
+	opacity:1;
+}
+
+a.hovertext {
+	position:sticky;
+	width: 100%;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1em;
+}
+
+a.hovertext::after {
+	content: attr(title);
+	position: absolute;
+	align-items:center;
+	left: 5%;
+	bottom: 100%;
+	width: 90%;
+	background: rgba(0, 0, 0, 0.3);
+	text-decoration: none !important;
+	color: #fff;
+	opacity: 0;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+}
+
+a.hovertext:hover::after,
+a.hovertext:focus::after {
+	opacity: 1.0;
+}
+
